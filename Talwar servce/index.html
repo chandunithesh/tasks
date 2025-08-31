@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TALWAR SERVICE - SERVICE REQUEST</title>
+  <link rel="icon" href="logo.png" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>TALWAR SERVICE</h2>
+    <form id="serviceForm" action="submit.html" method="post">
+      
+      <label for="name">NAME *</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="mobile">MOBILE NUMBER *</label>
+      <input type="tel" id="mobile" name="mobile" required pattern="[6-9]{1}[0-9]{9}">
+
+      <label for="altmobile">ALTERNATE NUMBER *</label>
+      <input type="tel" id="altmobile" name="altmobile" pattern="[6-9]{1}[0-9]{9}">
+
+      <label for="vehicleno">VEHICLE NUMBER *</label>
+      <input type="text" id="vehicleno" name="vehicleno" required>
+
+      <label for="vehiclemodel">VEHICLE MODEL (SANTRO/i10 ETC) *</label>
+      <input type="text" id="vehiclemodel" name="vehiclemodel" required>
+
+      <label for="date">APPOINTMENT DATE *</label>
+      <input type="date" id="date" name="date" required>
+
+      <label>PICKUP/APPOINTMENT *</label>
+      <div class="radio-group">
+        <input type="radio" name="pickup" value="pickup" required> Need Pickup <br>
+        <input type="radio" name="pickup" value="appointment"> Need Appointment <br>
+        <input type="radio" name="pickup" value="breakdown"> Need to Send Break-down
+      </div>
+
+      <label>WORKSHOP LOCATION *</label>
+      <div class="radio-group">
+        <input type="radio" name="location" value="TARNAKA" required> Tarnaka <br>
+        <input type="radio" name="location" value="TRIMULGHERRY"> Trimulgherry-Karkhana
+      </div>
+
+      <label for="pickupaddr">ADDRESS FOR PICKUP</label>
+      <input type="text" id="pickupaddr" name="pickupaddr">
+
+      <label for="landmark">LAND MARK</label>
+      <input type="text" id="landmark" name="landmark">
+
+      <label for="remarks">REMARKS/INSTRUCTIONS</label>
+      <textarea id="remarks" name="remarks" rows="3"></textarea>
+      
+      <button type="clear all" class="clear all-button">Clear All</button>
+      <button type="submit" class="submit-button">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

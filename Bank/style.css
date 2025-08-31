@@ -1,0 +1,87 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f9fa;
+}
+
+.products-section {
+    padding: 40px;
+    text-align: center;
+    background: green;
+}
+
+.products-section h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.products-section .description {
+    color: #7c0808;
+    font-size: 14px;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-all-btn {
+    border: 1px solid #007bff;
+    background: transparent;
+    color: #ee6a12;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 40px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 230px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.card p {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.apply-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.know-more {
+    display: inline-block;
+    color: #007bff;
+    font-size: 13px;
+    text-decoration: none;
+}

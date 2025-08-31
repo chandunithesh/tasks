@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="#" method="POST" class="registration-form">
+            <h2>Are you Looking for a Job?</h2>
+            <p>Register Free & Start applying for thousands of Job Interviews & Recruitment drives</p>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Email Address">
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Password - min 6 characters">
+            
+            <label for="mobile">Mobile Number</label>
+            <input type="text" id="mobile" name="mobile" required placeholder="Mobile Number">
+            
+            <label for="city">Current City</label>
+            <select id="city" name="city" required>
+                <option value="" disabled selected>Select City</option>
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                <option value="city3">City 3</option>
+            </select>
+            
+            <label for="qualification">Qualification Details</label>
+            <select id="qualification" name="qualification" required>
+                <option value="" disabled selected>Select Course</option>
+                <option value="course1">Course 1</option>
+                <option value="course2">Course 2</option>
+                <option value="course3">Course 3</option>
+            </select>
+            
+            <label for="resume">Upload Resume</label>
+            <input type="file" id="resume" name="resume">
+            
+            <div class="terms">
+                <input type="checkbox" id="terms" name="terms" required>
+                <label for="terms">I have read the terms and conditions</label>
+            </div>
+
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f6f6f6;
+}
+
+.container {
+  display: flex;
+  gap: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 960px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+  flex: 1;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .icon {
+  font-size: 2rem;
+  opacity: 0.3;
+}
+
+.card h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+}
+
+.card p {
+  flex-grow: 1;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.card button {
+  padding: 0.7rem 1.5rem;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: white;
+  color: inherit;
+}
+
+/* Color themes for each card */
+.sedan {
+  background-color: #e28525;
+}
+
+.suv {
+  background-color: #016972;
+}
+
+.luxury {
+  background-color: #00403f;
+}
+
+.credit {
+  text-align: center;
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.credit a {
+  color: #2a5bd7;
+  text-decoration: underline;
+}

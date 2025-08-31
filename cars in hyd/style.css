@@ -1,0 +1,131 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  background-color: Pink;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  width: 60%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 25px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.car-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.car-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  width: 23%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car-title {
+  background-color: #2a58f1;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.car-card img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2a58f1;
+  margin: 10px 0;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.buttons button {
+  padding: 8px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.whatsapp {
+  background-color: #25D366;
+  color: white;
+}
+
+.call {
+  background-color: #007bff;
+  color: white;
+}
+
+.download {
+  background-color: #0c1a45;
+  color: white;
+  padding: 10px 20px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+  .car-grid {
+    justify-content: center;
+  }
+
+  .car-card {
+    width: 45%; /* 2 cards per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .search-bar {
+    width: 90%;
+  }
+
+  .car-card {
+    width: 100%; /* 1 card per row on small screens */
+    margin-bottom: 20px;
+  }
+}
